@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sakshi Sirsat — Resume</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+      background: #ffffff;
+      color: #000;
+      height: 100vh;
+      width: 100vw;
+      overflow: hidden;
+    }
+
+    #pdf-view {
+      width: 100vw;
+      height: 100vh;
+      border: none;
+      display: none;
+    }
+
+    #fallback {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      height: 100vh;
+      font-size: 20px;
+      line-height: 1.6;
+    }
+
+    a {
+      color: #000;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <object id="pdf-view" data="resume.pdf" type="application/pdf"></object>
+
+  <div id="fallback">
+    <div class="contact" style="font-family: 'Times New Roman', serif; text-align: center;">
+      <strong style="font-size: 30px;">Sakshi Sirsat</strong><br>
+      <a href="mailto:sakshisirsat108@gmail.com" style="font-size: 17px;">sakshisirsat108@gmail.com</a><br>
+      <a href="tel:+919579795861" style="font-size: 17px;">+91 9579795861</a>
+    </div>
+    <div style="font-size: 17px; font-family: 'Times New Roman', serif; text-align: center;">
+      <a href="resume.pdf" download style="color: #551A8B; text-decoration: underline;">Download Resume</a>
+    </div>
+  </div>
+
+</body>
+</html>
